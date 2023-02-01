@@ -1,5 +1,5 @@
 resource "aws_security_group" "allow_tls" {
-  name = "terraform-sg"
+  name = "terraform-group"
 
   ingress {
     description = "Allow port 22 - inbound"
