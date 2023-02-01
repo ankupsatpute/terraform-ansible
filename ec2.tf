@@ -9,7 +9,5 @@ resource "aws_instance" "ankush" {
     Name = "Target"
   }
 
-  provisioner "local-exec" {
-    command = "echo ${aws_instance.ankush.public_ip} >> /etc/ansible/hosts"
-  }
+ 
 }
