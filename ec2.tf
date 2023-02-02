@@ -3,7 +3,7 @@ resource "aws_instance" "ankush" {
   instance_type          = "t2.micro"
   availability_zone = "ap-south-1a"
   vpc_security_group_ids = [aws_security_group.allow_tls.id]
-  key_name = "ec2-key"
+  key_name = "LTIDEMO"
 
   tags = {
     Name = "Target"
